@@ -26,7 +26,6 @@
             let orderToken = JSON.parse(localStorage.getItem('orderData'));
             if (!orderToken) {
                 $(".err").attr("style","display:block;");
-                // return;
             } else {
                 orderToken = orderToken.order_token;
                 // 用order_token去開Mypage
