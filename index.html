@@ -24,9 +24,8 @@
             e.preventDefault();
             // 從localStorage取出order_token
             let orderToken = JSON.parse(localStorage.getItem('orderData'));
-            let local_error = orderToken.error;
 
-            if ((!orderToken)||(local_error)) {
+            if (!orderToken) {
                 $(".err").attr("style","display:block;");
             } else {
                 orderToken = orderToken.order_token;
