@@ -18,6 +18,11 @@ html,body{
     text-align: center;
 }
 
+.err{
+    text-align: center;
+    color:red;
+}
+
 @media (max-width: 768px) {
     #logo{
         width: 50%;
